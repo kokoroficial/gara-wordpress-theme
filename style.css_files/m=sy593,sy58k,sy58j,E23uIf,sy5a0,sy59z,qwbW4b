@@ -1,0 +1,17 @@
+loaded_h_0(function(_){var window=this;
+_.tgp=_.y("E23uIf",[_.G_a]);
+_.Uep=_.y("p8SIIc",[]);
+_.Tep={state:0,Jba:void 0,B8a:void 0,wha:void 0};
+_.v("E23uIf");
+var wgp,Agp,ygp;wgp=function(a,b,c){_.$fp&&a.Da.isAvailable()&&a.Da.Ca();a.oa.value={state:1,Jba:b,B8a:_.ugp(a,_.vgp(a,b)),wha:c}};_.xgp=function(a,b,c){a.oa.value.state===1&&a.oa.value.Jba===b?a.Ba(c):wgp(a,b,c)};_.ugp=function(a,b){return b.map(c=>a.Ha.has(c)?a.Ha.get(c):c).filter(c=>a.sourceMap.has(c)).map(c=>({html:a.sourceMap.get(c)}))};_.vgp=function(a,b){return b==="N5sdyd"?[...a.sourceMap.keys()]:a.Aa.has(b)?a.Aa.get(b):[]};
+_.zgp=class extends _.ri{static Sa(){return{service:{uIa:_.Ufg},Vs:{W9d:_.Uep}}}constructor(a){super();this.Ea=null;this.sourceMap=new Map;this.Aa=new Map;this.Ha=new Map;this.Ca=new Map;const b=a.Vs.W9d;this.oa=_.l_(_.Tep);this.Ka=_.l_({count:0});this.Da=a.service.uIa;b&&new ygp(b,this)}O8a(a){this.oa.subscribe(a)}Na(a){return this.Ka.subscribe(a)}Ba(a){this.oa.value.state!==0&&(_.$fp&&this.Da.isAvailable()&&this.Da.oa(),this.oa.value={state:0,Jba:void 0,B8a:void 0,wha:a})}};
+Agp=function(a,b){a.oa||(a.oa=!0,b(),a.oa=!1)};ygp=class{constructor(a,b){this.Ba=a;this.Aa=b;this.oa=!1;b.O8a(c=>{Agp(this,()=>{this.Ba.setState(c)})});a.IWc(c=>{Agp(this,()=>{c.state===1&&c.Jba!==void 0?wgp(this.Aa,c.Jba,c.wha):this.Aa.Ba(c.wha)})})}};_.Sr(_.tgp,_.zgp);
+_.w();
+_.elp=_.y("qwbW4b",[_.tgp]);
+_.clp=!!(_.Bi[46]>>28&1);_.dlp=!!(_.Bi[46]>>29&1);
+_.v("qwbW4b");
+var flp=class extends _.ds{static Sa(){return{model:{hIb:_.zgp},Vs:{gGb:_.alp}}}constructor(a){super(a.Oa);var b=this.WA=a.model.hIb,c=this.getRoot().Za();b.Ea=c;if(this.oa=a.Vs.gGb)a=(a=this.getRoot().el().closest("[data-i]"))?_.Ld(_.ro(a).getData("i"),0):0,this.oa.Ca(a,this.WA)}Ba(a){var b=a.targetElement;(b=b.parent()?_.pi(b.parent().getData("cid")):null)&&_.xgp(this.WA,b,a.targetElement)}Aa(a){this.WA.Ba(a.targetElement.Rc("data-ved")?a.targetElement:void 0)}Ca(a){let b,c;_.clp&&((b=this.oa)==
+null?0:b.Ba())&&this.WA!==((c=this.oa)==null?void 0:c.Ba())||_.xgp(this.WA,"N5sdyd",a.targetElement.Rc("data-ved")?a.targetElement:void 0)}};flp.prototype.$wa$daG3j=function(){return this.Ca};flp.prototype.$wa$N6Mv3e=function(){return this.Aa};flp.prototype.$wa$oMGkAb=function(){return this.Ba};_.fs(_.elp,flp);
+_.w();
+});
+// Google Inc.

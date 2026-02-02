@@ -1,0 +1,172 @@
+/*
+Theme Name: Gara Theme
+Author: Kokoroficial
+Version: 1.0
+*/
+:root {
+  /* Core Brand Colors */
+  --color-orange: #DF703D;
+  --color-dark-gray: #3F3F3F;
+  --color-light-gray: #98989A;
+  --color-blue-accent: #65B2E8;
+
+  /* Typography */
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Nunito', sans-serif;
+}
+/*Reset and Base Styles*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--color-dark-gray);
+  line-height: 1.6;
+  background: #fff;
+}
+h1, h2, h3, h4 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+p {
+  font-family: var(--font-secondary);
+  color: var(--color-dark-gray);
+}
+/*Logo*/
+.logo-container {
+  /*padding: 5rem 2rem;*/
+  display: flex;
+  justify-content: center;
+  background: #ccc;
+}
+
+/*Hero*/
+.hero {
+  padding: 5rem 2rem;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.hero h1 {
+  color: var(--color-dark-gray);
+}
+
+.hero p {
+  max-width: 640px;
+  margin: 1rem auto 0;
+}
+
+.button,
+button {
+  background: var(--color-orange);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover,
+button:hover {
+  background: #c85f2f;
+}
+
+/*Products*/
+.products {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  border: 1px solid #eee;
+  padding: 1rem;
+  text-align: center;
+}
+
+/*Responsive*/
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero {
+    padding: 3rem 1.5rem;
+  }
+}
+
+/*Header*/
+.site-header {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #eee;
+  background-color: #ccc;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--color-dark-gray);
+}
+
+/*Contact Section*/
+.contact {
+  padding: 4rem 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  font-family: var(--font-primary);
+}
+
+.contact-form textarea {
+  min-height: 120px;
+}
+
+.contact-form button {
+  align-self: flex-start;
+}
